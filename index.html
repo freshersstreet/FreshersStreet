@@ -19,6 +19,7 @@
     <title>Fresher's Street</title>
   </head>
   <body theme="light">
+
     <!--NAV BAR CODE-->
     <!-- Image and text -->
 <nav class="navbar sticky-top navbar-light bg-light">
@@ -51,10 +52,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#About Us">About Us</a>
+              <a class="nav-link" href="/FreshersStreet/about.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -68,11 +69,11 @@
                 Courses
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">C - Course</a></li>
-                <li><a class="dropdown-item" href="#">C++ - Course</a></li>
+                <li><a class="dropdown-item" href="/FreshersStreet/C.html">C - Course</a></li>
+                <li><a class="dropdown-item" href="/FreshersStreet/C++.html">C++ - Course</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Web Development</a>
+                  <a class="dropdown-item" href="/FreshersStreet/Webd.html">Web Development</a>
                 </li>
               </ul>
             </li>
@@ -112,15 +113,15 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form action="index1.php" method="post">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password">
   </div>
   <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -190,13 +191,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://images.unsplash.com/photo-1526040652367-ac003a0475fe?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixlib=rb-1.2.1&q=80&w=1600" class="d-block w-100" alt="...">
+      <img class="img-fluid" src="https://images.unsplash.com/photo-1526040652367-ac003a0475fe?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixlib=rb-1.2.1&q=80&w=1600" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://images.unsplash.com/photo-1477238134895-98438ad85c30?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixlib=rb-1.2.1&q=80&w=1600" class="d-block w-100" alt="...">
+      <img class="img-fluid" src="https://images.unsplash.com/photo-1477238134895-98438ad85c30?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixlib=rb-1.2.1&q=80&w=1600" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://images.unsplash.com/photo-1544822688-c5f41d2c1972?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixlib=rb-1.2.1&q=80&w=1600" class="d-block w-100" alt="...">
+      <img class="img-fluid" src="https://images.unsplash.com/photo-1544822688-c5f41d2c1972?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixlib=rb-1.2.1&q=80&w=1600" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
@@ -228,42 +229,27 @@
   </div>
   
   <p style="text-align:center;">
-
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Read More</button>
+  <a class="btn btn-primary" href="/FreshersStreet/about.html" role="button">Read More</a>
 </p>
-<div class="row">
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
-      <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
-      <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-      </div>
-    </div>
-  </div>
-</div>
+
   <hr style="margin:10px 50px;">
   <h2 align="center" style="text-shadow:1px 1px 2px grey;">Courses</h2>
   <br>
- <p style="text-align:center;"><iframe width="500" height="300" src="https://www.youtube.com/embed/ZSPZob_1TOk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <iframe width="500" height="300" src="https://www.youtube.com/embed/KJgsSFOSQv0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	&nbsp; </p>
- 
+ <p style="text-align:center;"><iframe class="img-fluid" width="500" height="300" src="https://www.youtube.com/embed/ZSPZob_1TOk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <iframe width="500" height="300" class="img-fluid" src="https://www.youtube.com/embed/KJgsSFOSQv0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	&nbsp; </p>
  <br>
+ <p style="text-align:center;">
+    <a class="btn btn-primary" href="/FreshersStreet/C++.html" role="button">More Courses</a>
+ </p>
+ <br><br>
 
  </body>
 
-
-
+<!--INSERT INTO `login` (`sno`, `email`, `password`, `dt`) VALUES ('1', 'testmail@gmail.com', 'testpass', current_timestamp());-->
 
 
 <footer class="container">
-  <p> © 2020 - 2021 Fresher's Street, Inc. - <a href="#" style="text-decoration:none;">Privacy</a> - <a href="#" style="text-decoration:none;">Terms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#" style="text-decoration:none;">Back to Top</a>
-  </p>
-</footer>
+    <p class="float-end"><a style="text-decoration:none;" href="#">Back to top</a></p>
+    <p>© 2021-2021 Fresher's Street, Inc. · <a style="text-decoration:none;" href="#">Privacy</a> · <a style="text-decoration:none;" href="#">Terms</a></p>
+  </footer
 </html>
