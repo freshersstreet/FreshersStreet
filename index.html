@@ -376,12 +376,46 @@
     });
 </script>  
   
+    <div id="reg-form" style="text-align:center;">
+    <h2 class="featurette-heading"><span class="animate-2"></span> <span class="text-muted">Let's Talk.</span>
+          </h2>
+    <form action="" method="">
+    <div>
+      <input type="text" id="name" name="name" placeholder="Your Name" style="width:40%;padding:10px;margin:10px 5px;" required></input>
+      <input type="email" id="email" name="email" placeholder="Your email" style="width:40%;padding:10px;margin:10px 5px;" required></input>
+    </div>
+    <div>
+      <input type="text" id="contact" name="contact" placeholder="Contact No. (optional)" style="width:40%;padding:10px;margin:10px 5px;"></input>
+      <input type="text" id="subject" name="subject" placeholder="Subject" style="width:40%;padding:10px;margin:10px 5px;"></input>
+      
+    </div>
+    <div>
+      <input type="text" id="message" name="message" placeholder="Message" style="width:81%;padding:50px;margin:10px 5px;" required></input>
+    </div>   
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+    </form>
+  
+  </div>
+
+
+  <script>
+  var typed = new Typed(".animate-2", {
+    strings: [
+    "Got something in mind?"
+    ],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true
+    
+    });
+</script> 
   
   </body>
 
   <!--INSERT INTO `login` (`sno`, `email`, `password`, `dt`) VALUES ('1', 'testmail@gmail.com', 'testpass', current_timestamp());-->
 
-  <footer class="container" style="background-color: gray; padding: 5px">
+  <!--<footer class="container" style="background-color: gray; padding: 5px">
     <p class="float-end">
       <a style="text-decoration: none; color: white" href="#">Back to top</a>
     </p>
@@ -390,6 +424,6 @@
       <a style="text-decoration: none; color: white" href="#">Privacy</a> ·
       <a style="text-decoration: none; color: white" href="#">Terms</a>
     </p>
-  </footer>
+  </footer>-->
   <br />
 </html>
