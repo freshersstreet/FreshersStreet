@@ -2,11 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,7 +20,7 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <title>Fresher's Street</title>
     <link rel="shortcut icon" type="image/png" href="/FreshersStreet/favicon.png">
   </head>
@@ -38,15 +35,14 @@
     <nav class="navbar sticky-top navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="/FreshersStreet/">
-          <iframe
-            src="https://giphy.com/embed/gFtDyM0N3aLfcn5IvC"
+        <img
+            src="/FreshersStreet/favicon.png"
             class="d-inline-block align-top"
-            width="90"
-            height="34"
+            style="width:30px;height:30px;"
             frameborder="0"
-            class="giphy-embed"
+            
             allowfullscreen
-          ></iframe>
+          ></img>
           <b>Fresher's Street</b>
         </a>
         <div class="mx-2">
@@ -416,19 +412,18 @@
       ></iframe>
     </div>
     <br /><br /><br />
-    <p style="text-align: center; font-size: 22px; font-family: 'Pacifico'">
-      <big
-        >Do you want to learn coding?!<br />or<br />Searching for class notes
-        and pdfs?!</big
-      >
+    <p style="text-align: center; font-size: 22px; font-family: 'Playfair Display';">
+      <big>
+      <span class="animate"></span>
+      </big>
     </p>
-    <br /><br /><br />
+    <br><br><br>
     <style>
       h2 {
         font-family: "Playfair Display", serif;
       }
     </style>
-
+<br><br><br>
     <div class="container my-5">
       <div
         class="row featurette d-flex justify-content-center align-items-center"
@@ -507,6 +502,20 @@
       </div>
       <br />
     </div>
+  
+  <script>
+  var typed = new Typed(".animate", {
+    strings: [
+    "Coding?","Web Dev?","Class Note?","Pdf?"
+    ],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true
+    
+    });
+</script>  
+  
+  
   </body>
 
   <!--INSERT INTO `login` (`sno`, `email`, `password`, `dt`) VALUES ('1', 'testmail@gmail.com', 'testpass', current_timestamp());-->
