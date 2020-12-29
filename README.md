@@ -1,6 +1,6 @@
 ### Hi there, I'm Aditya - aka <a href="https://freshersstreet.github.io/FreshersStreet/">Fresher's Street Admin</a>👋
 <br>
-<img src="https://wallpapercave.com/wp/wp3885257.jpg" alt="Aditya Cover Pic" width="650" />
+<img src="https://wallpapercave.com/wp/wp3885257.jpg" alt="Aditya Cover Pic" width="600" />
 
 ## I'm a Student, Developer, and Indian!!
 
