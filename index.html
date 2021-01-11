@@ -31,7 +31,59 @@
       background-image: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Simple-White-Gradient-Background-Image.jpg);
       background-size: 100% 100%;
     "
-  >   
+  >
+    <style>
+.mega-menu{
+    background-color: transparent;
+}
+  .dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu{
+    border:none;
+}
+
+.dropdown-item{
+    padding: 12px 40px 12px 20px;
+    font-size: 15px;
+    font-family:arial;
+    color:black;
+    font-weight: lighter;
+    background-color: white;
+    transform-origin: center;
+    animation :rotate 1.5s ease 1;
+}
+@keyframes rotate{
+    0%{transform: perspective(600px) rotatey(90deg); transform-origin:center;}
+    100%{transform: perspective(600px) rotatey(0deg); transform-origin:center;}
+}
+
+.dropdown-item:nth-of-type(1){
+    animation-delay: 0s;
+}
+.dropdown-item:nth-of-type(2){
+    animation-delay: 0.1s;
+}
+.dropdown-item:nth-of-type(3){
+    animation-delay: 0.2s;
+}
+.dropdown-item:nth-of-type(4){
+    animation-delay: 0.3s;
+}
+.dropdown-item:nth-of-type(5){
+    animation-delay: 0.4s;
+}
+
+.dropdown-item:hover{
+    background-color: #d9534f;
+    color:white;
+}
+
+</style>
+    
+    
+    
     <!--NAV BAR CODE-->
     <!-- Image and text -->
     <nav class="navbar sticky-top navbar-light bg-light">
@@ -100,27 +152,26 @@
               >
                 Materials
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <a class="dropdown-item" href="/FreshersStreet/courses.html"
                     >Mechanics</a
                   >
-                </li>
-                <li>
+                
                   <a class="dropdown-item" href="/FreshersStreet/math.html"
                     >Maths</a
                   >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
+                
                   <a class="dropdown-item" href="/FreshersStreet/cs.html"
                     >CS</a
                   >
-                </li>
-                <li>
+                  <a class="dropdown-item" href="#"
+                    >Chemistry</a
+                  >
                   <a class="dropdown-item" href="/FreshersStreet/PYQs.html"
                     >PYQs</a
                   >
+                  
                 </li>
               </ul>
             </li>
@@ -135,19 +186,16 @@
               >
                 Courses
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <a class="dropdown-item" href="/FreshersStreet/C.html"
                     >C - Course</a
                   >
-                </li>
-                <li>
+                
                   <a class="dropdown-item" href="/FreshersStreet/C++.html"
                     >C++ - Course</a
                   >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
+                
                   <a class="dropdown-item" href="/FreshersStreet/Webd.html"
                     >Web Development</a
                   >
