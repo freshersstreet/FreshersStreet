@@ -2,11 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -15,17 +22,76 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <title>Fresher's Street</title>
+    <link rel="shortcut icon" type="image/png" href="/FreshersStreet/favicon.png">
   </head>
-  <body theme="light">
+  <body
+    style="
+      background-image: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Simple-White-Gradient-Background-Image.jpg);
+      background-size: 100% 100%;
+    "
+  >
+    
+   
+    <style>
+.mega-menu{
+    background-color: transparent;
+}
+  .dropdown:hover .dropdown-menu{
+    display: block;
+}
 
+.dropdown-menu{
+    border:none;
+}
+
+.dropdown-item{
+    padding: 12px 40px 12px 20px;
+    font-size: 15px;
+    font-family:arial;
+    color:black;
+    font-weight: lighter;
+    background-color: white;
+    transform-origin: center;
+    animation :rotate 1.5s ease 1;
+}
+@keyframes rotate{
+    0%{transform: perspective(600px) rotatey(90deg); transform-origin:center;}
+    100%{transform: perspective(600px) rotatey(0deg); transform-origin:center;}
+}
+
+.dropdown-item:nth-of-type(1){
+    animation-delay: 0s;
+}
+.dropdown-item:nth-of-type(2){
+    animation-delay: 0.1s;
+}
+.dropdown-item:nth-of-type(3){
+    animation-delay: 0.2s;
+}
+.dropdown-item:nth-of-type(4){
+    animation-delay: 0.3s;
+}
+.dropdown-item:nth-of-type(5){
+    animation-delay: 0.4s;
+}
+
+.dropdown-item:hover{
+    background-color: #d9534f;
+    color:white;
+}
+
+</style>
+    
+    
+    
     <!--NAV BAR CODE-->
     <!-- Image and text -->
-<nav class="navbar sticky-top navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/FreshersStreet/">
-     <img
+    <nav class="navbar sticky-top navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/FreshersStreet/">
+        <img
             src="/FreshersStreet/favicon.png"
             class="d-inline-block align-top"
             style="width:30px;height:30px;"
@@ -33,11 +99,27 @@
             
             allowfullscreen
           ></img>
-      <b>Fresher's Street</b> 
-    </a>
-  </div>
-</nav>
-    
+          <b>Fresher's Street</b>
+        </a>
+        <div class="mx-2">
+          <button
+            class="btn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#LoginModal"
+          >
+            Login
+          </button>
+          <button
+            class="btn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#SignUpModal"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </nav>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <button
@@ -54,7 +136,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/FreshersStreet/index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/FreshersStreet/about.html">About Us</a>
@@ -62,7 +146,7 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle active"
-                href="/FreshersStreet/index.html"
+                href="#"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -70,12 +154,26 @@
               >
                 Materials
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/FreshersStreet/courses.html">Mechanics</a></li>
-                <li><a class="dropdown-item" href="/FreshersStreet/math.html">Maths</a></li>
-                <li><hr class="dropdown-divider" /></li>
+              <ul class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="/FreshersStreet/WebD.html">PCE</a>
+                  <a class="dropdown-item" href="/FreshersStreet/courses.html"
+                    >Mechanics</a
+                  >
+                
+                  <a class="dropdown-item" href="/FreshersStreet/math.html"
+                    >Maths</a
+                  >
+                
+                  <a class="dropdown-item" href="/FreshersStreet/cs.html"
+                    >CS</a
+                  >
+                  <a class="dropdown-item" href="/FreshersStreet/inorg.html"
+                    >Chemistry</a
+                  >
+                  <a class="dropdown-item" href="/FreshersStreet/PYQs.html"
+                    >PYQs</a
+                  >
+                  
                 </li>
               </ul>
             </li>
@@ -90,12 +188,19 @@
               >
                 Courses
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/FreshersStreet/C.html">C - Course</a></li>
-                <li><a class="dropdown-item" href="/FreshersStreet/C++.html">C++ - Course</a></li>
-                <li><hr class="dropdown-divider" /></li>
+              <ul class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="/FreshersStreet/WebD.html">Web Development</a>
+                  <a class="dropdown-item" href="/FreshersStreet/C.html"
+                    >C - Course</a
+                  >
+                
+                  <a class="dropdown-item" href="/FreshersStreet/C++.html"
+                    >C++ - Course</a
+                  >
+                
+                  <a class="dropdown-item" href="/FreshersStreet/Webd.html"
+                    >Web Development</a
+                  >
                 </li>
               </ul>
             </li>
